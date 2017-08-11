@@ -11,6 +11,7 @@
         <div class="container">
 
             <h1>Ein Quiz über Mich</h1>
+            <img src="Logo.png" />
             <div class="row quiz-options">
                 <div class="col-md-3">
 
