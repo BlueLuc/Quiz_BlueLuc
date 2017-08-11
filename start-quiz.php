@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="quiz-question">
-                            <h2>Welchen Fußballverein mag ich am liebsten?</h2>
+                            <h2>Welchen Fußballverein mag ich am <liebs></liebs>ten?</h2>
                             <div class="row quiz-options">
                                 <div class="col-md-12">
                                     <div class="quiz-question-answer">
@@ -281,6 +281,17 @@
                 if ($answer10 == "Ball") { $totalCorrect++; }
 
                 echo "<div id='results'>$totalCorrect / 10 correct</div>";
+
+                if ($totalCorrect == "1") { echo "<div id='results'>haha du loser</div>"; }
+                if ($totalCorrect == "2") { echo "<div id='results'>bist kein loser aber trotzdem noch schlecht</div>"; }
+                if ($totalCorrect == "3") { echo "<div id='results'>du besserst dich</div>"; }
+                if ($totalCorrect == "4") { echo "<div id='results'>das geht noch viel besser</div>"; }
+                if ($totalCorrect == "5") { echo "<div id='results'>die hälfte der möglichen punkte</div>"; }
+                if ($totalCorrect == "6") { echo "<div id='results'>du bist auf dem richtigen weg</div>"; }
+                if ($totalCorrect == "7") { echo "<div id='results'>komm noch schöne drei punkte dann hast du es geschafft</div>"; }
+                if ($totalCorrect == "8") { echo "<div id='results'>andere können das besser</div>"; }
+                if ($totalCorrect == "9") { echo "<div id='results'>die eine frage musst du noch richtig ankreuzen</div>"; }
+                if ($totalCorrect == "10") { echo "<div id='results'>jaaaa du hast es geschafft</div>"; }
 
                 ?>
             </div>
