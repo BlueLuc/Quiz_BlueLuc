@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="quiz-question">
-                            <h2>Welchen Fußballverein mag ich am liebsgten?</h2>
+                            <h2>Welchen Fußballverein mag ich am liebsten?</h2>
                             <div class="row quiz-options">
                                 <div class="col-md-12">
                                     <div class="quiz-question-answer">
