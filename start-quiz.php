@@ -284,22 +284,30 @@
                 if ($answer9 == "Leo") { $totalCorrect++; }
                 if ($answer10 == "Ball") { $totalCorrect++; }
 
-                echo "<div id='results'>$totalCorrect / 10 correct</div>";
-
                 $name = $_POST['Username'];
 
+                if ($name == "Luca") { echo "<div id='results'>du darfst das Quiz nicht machen</div>"; }
+
+                    if ($name != "Luca") {
 
 
-                if ($totalCorrect == "1") { echo "<div id='results'>$name , du loser, du hast nur $totalCorrect Punkt</div>"; }
-                if ($totalCorrect == "2") { echo "<div id='results'>$name , du bist kein loser mehr, hast aber trotzdem nur $totalCorrect Punkte </div>"; }
-                if ($totalCorrect == "3") { echo "<div id='results'>du besserst dich, $name , aber hast leider nur $totalCorrect Punkte</div>"; }
-                if ($totalCorrect == "4") { echo "<div id='results'>das geht noch viel besser, $name , als $totalCorrect Punkte</div>"; }
-                if ($totalCorrect == "5") { echo "<div id='results'>ich hoffe du schaffst $totalCorrect Punkte noch dazu, $name</div>"; }
-                if ($totalCorrect == "6") { echo "<div id='results'>du bist auf dem richtigen weg mit deinen $totalCorrect Punkten, $name</div>"; }
-                if ($totalCorrect == "7") { echo "<div id='results'>du hast $totalCorrect Punkte, $name , brauchst aber noch 3</div>"; }
-                if ($totalCorrect == "8") { echo "<div id='results'>andere können das besser als du, $name , mit deinen $totalCorrect Punkten</div>"; }
-                if ($totalCorrect == "9") { echo "<div id='results'>$totalCorrect Punkte sind schon sehr gut, $name</div>"; }
-                if ($totalCorrect == "10") { echo "<div id='results'>jaaaa du hast es geschafft, $name , du hast $totalCorrect Punkte</div>"; }
+                        echo "<div id='results'>$totalCorrect / 10 correct</div>";
+
+                        if ($totalCorrect == "1") { echo "<div id='results'>$name , du loser, du hast nur $totalCorrect Punkt</div>"; }
+                        if ($totalCorrect == "2") { echo "<div id='results'>$name , du bist kein loser mehr, hast aber trotzdem nur $totalCorrect Punkte </div>"; }
+                        if ($totalCorrect == "3") { echo "<div id='results'>du besserst dich, $name , aber hast leider nur $totalCorrect Punkte</div>"; }
+                        if ($totalCorrect == "4") { echo "<div id='results'>das geht noch viel besser, $name , als $totalCorrect Punkte</div>"; }
+                        if ($totalCorrect == "5") { echo "<div id='results'>ich hoffe du schaffst $totalCorrect Punkte noch dazu, $name</div>"; }
+                        if ($totalCorrect == "6") { echo "<div id='results'>du bist auf dem richtigen weg mit deinen $totalCorrect Punkten, $name</div>"; }
+                        if ($totalCorrect == "7") { echo "<div id='results'>du hast $totalCorrect Punkte, $name , brauchst aber noch 3</div>"; }
+                        if ($totalCorrect == "8") { echo "<div id='results'>andere können das besser als du, $name , mit deinen $totalCorrect Punkten</div>"; }
+                        if ($totalCorrect == "9") { echo "<div id='results'>$totalCorrect Punkte sind schon sehr gut, $name</div>"; }
+                        if ($totalCorrect == "10") { echo "<div id='results'>jaaaa du hast es geschafft, $name , du hast $totalCorrect Punkte</div>"; }
+
+                    }
+
+
+
 
 
                 ?>
