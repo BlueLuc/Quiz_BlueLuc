@@ -288,7 +288,7 @@
 
                 if ($name == "Luca") { echo "<div id='results'>du darfst das Quiz nicht machen</div>"; }
 
-                    if ($name != "Luca") {
+                    else {
 
 
                         echo "<div id='results'>$totalCorrect / 10 correct</div>";
