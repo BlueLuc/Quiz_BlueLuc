@@ -182,7 +182,7 @@
                             </div>
                         </div>
                         <div class="quiz-question">
-                            <h2>Welchen Fußballverein mag ich am <liebs></liebs>ten?</h2>
+                            <h2>Welchen Fußballverein mag ich am liebsten?</h2>
                             <div class="row quiz-options">
                                 <div class="col-md-12">
                                     <div class="quiz-question-answer">
@@ -286,7 +286,9 @@
 
                 $name = $_POST['Username'];
 
-                if ($name == "Luca") { echo "<div id='results'>du darfst das Quiz nicht machen</div>"; }
+                $blacklistedNames = array("Luca", "Luci");
+                if (in_array($name, $blacklistedNames)) { echo "<div id='results'>du darfst das Quiz nicht machen</div>"; }
+
 
                     else {
 
