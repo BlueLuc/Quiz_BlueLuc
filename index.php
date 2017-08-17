@@ -31,7 +31,7 @@
                         <li><a href="start-quiz.php">#1 Quiz</a></li>
                         <li><a href="https://www.youtube.com/channel/UC2dLAwPuGIyLxjJdnV2nMZA">YouTube</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kategorien <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Menschen</a></li>
                                 <li><a href="#">Kultur</a></li>
@@ -46,15 +46,37 @@
         </nav>
 
         <div class="slider-1">
-            <div class="slider-content-1"><h2>your content</h2></div>
+            <div class="slider-content-1"><h2>your content</h2>
+            <div class="slider-btn"></div>
+            </div>
 
             <div class="slider-content-2"><h2>asdf</h2></div>
 
-            <div class="slider-content-3"><h2>lkjh</h2></div>
+            <div class="slider-content-3"><h2>lkjhf</h2></div>
 
         </div>
 
-        
+        <div class="panel panel-primary">
+            <div class="panel-heading"><a href="" class="btn-primary2">Facebook</a></div>
+            <div class="panel-body">asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</div>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading"><a href="https://www.youtube.com/channel/UC2dLAwPuGIyLxjJdnV2nMZA" class="btn-primary2">YouTube</a></div>
+            <div class="panel-body">asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</div>
+        </div>
+
+        <div class="panel panel-warning">
+            <div class="panel-heading"><a href="" class="btn-primary2">Instagram</a></div>
+            <div class="panel-body">asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</div>
+        </div>
+
+        <div class="panel panel-primary2">
+            <div class="panel-heading"><a href="" class="btn-primary2">Twitter</a></div>
+            <div class="panel-body">asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</div>
+        </div>
+
+
 
 
 
@@ -64,31 +86,6 @@
         <script type="text/javascript" src="js/vendor/slick.min.js"></script>
 
         <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("my-btn");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks the button, open the modal
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
 
             $(document).ready(function(){
                 $('.slider-1').slick({

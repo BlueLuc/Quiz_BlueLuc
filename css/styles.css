@@ -96,7 +96,7 @@ input[type="submit"]{
     background: -o-linear-gradient(-90deg, #00BFFF, #ADFF2F, #FF0000, #FFFF00); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-90deg, #00BFFF, #ADFF2F, #FF0000, #FFFF00); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-90deg, #00BFFF, #ADFF2F, #FF0000, #FFFF00); /* Standard syntax */
-    border-color: transparent;
+    border: 0;
     text-align: center;
 }
 
@@ -194,13 +194,17 @@ input[type="submit"]{
 
 .slick-prev {
     left: 100px;
+    z-index: 10;
+    margin-top: 50px;
 }
 
 .slick-next{
     right: 100px;
+    margin-top: 50px;
 }
 .slider-1 {
     height: 200px;
+    margin-bottom: 200px;
 }
 .slider-content-1 {
     background: #009933; /* For browsers that do not support gradients */
@@ -208,7 +212,7 @@ input[type="submit"]{
     background: -o-linear-gradient(-90deg, #00e64d, #006622); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-90deg, #00e64d, #006622); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-90deg, #00e64d, #006622); /* Standard syntax */
-    height: 200px;
+    height: 300px;
     text-align: center;
 }
 
@@ -218,7 +222,7 @@ input[type="submit"]{
     background: -o-linear-gradient(-90deg, #ffa366, #e65c00); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-90deg, #ffa366, #e65c00); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-90deg, #ffa366, #e65c00); /* Standard syntax */
-    height: 200px;
+    height: 300px;
     text-align: center;
 }
 
@@ -228,6 +232,92 @@ input[type="submit"]{
     background: -o-linear-gradient(-90deg, #ff4dd2, #b30086); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-90deg, #ff4dd2, #b30086); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-90deg, #ff4dd2, #b30086); /* Standard syntax */
-    height: 200px;
+    height: 300px;
     text-align: center;
 }
+
+.slider-btn {
+    color: red;
+    z-index: 10;
+    margin: center;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-primary {
+    border-color: #809fff;
+}
+
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #809fff;
+    border-color: #809fff;
+}
+
+.panel-danger {
+    border-color: #ff6666;
+}
+
+.panel-danger > .panel-heading {
+    color: #fff;
+    background-color: #ff6666;
+    border-color: #ff6666;
+}
+
+.panel-warning {
+    border-color: #ffe680;
+}
+
+.panel-warning > .panel-heading {
+    color: #fff;
+    background-color: #ffe680;
+    border-color: #ffe680;
+}
+
+.panel-primary2 {
+    border-color: #809fff;
+}
+
+.panel-primary2 > .panel-heading {
+    color: #fff;
+    background-color: #809fff;
+    border-color: #809fff;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.btn-primary2 {
+
+}
+
+a.btn-primary2 {
+ color: #000;
+    display: block;
+    width: 150px;
+}
+
+a:hover {
+ color: #000;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: transparent;
+}
+

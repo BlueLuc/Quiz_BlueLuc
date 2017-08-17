@@ -29,7 +29,7 @@
                     <li><a href="start-quiz.php">#1 Quiz</a></li>
                     <li><a href="https://www.youtube.com/channel/UC2dLAwPuGIyLxjJdnV2nMZA">YouTube</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kategorien<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Menschen</a></li>
                             <li><a href="#">Kultur</a></li>
@@ -51,7 +51,7 @@
 
                     <form action="" method="post">
                         <div>
-                        <input type="text" name="Username" class="Username"  required>
+                        <input type="text" name="Username" class="Username" placeholder="Username" required>
                         </div>
                         <?php
                         $questions = array ( "Wann habe ich Geburtstag?" => array ("24.07.2001", "25.04.2002", "30.06.2003", "15.02.2001"),
