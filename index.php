@@ -46,13 +46,13 @@
         </nav>
 
         <div class="slider-1">
-            <div class="slider-content-1"><h2>your content</h2>
-            <div class="slider-btn"></div>
+            <div class="slider-content-1"><a href="Quiz-Rene.php" class="btn-primary3"><h1>Quiz über meinen Onkel</h1></a>
+
             </div>
 
-            <div class="slider-content-2"><h2>asdf</h2></div>
+            <div class="slider-content-2"><a href="Quiz-Papa.php" class="btn-primary3"><h1>Quiz über meinen Papa</h1></a></div>
 
-            <div class="slider-content-3"><h2>lkjhf</h2></div>
+            <div class="slider-content-3"><a href="Quiz-Mama.php" class="btn-primary3"><h1>Quiz über meine Mama</h1></a></div>
 
         </div>
 
