@@ -19,7 +19,6 @@ h1 {
 }
 
 input[type="submit"]{
-    width:;
     height:50px;
 
 }
@@ -30,5 +29,165 @@ input[type="submit"]{
 
 }
 .quiz-options{
-    margin-top: 200px;
+    /*margin-top: 200px;*/
+
 }
+
+.navbar-default{
+    background: blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, darkblue, lightskyblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, darkblue, lightskyblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, darkblue, lightskyblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, darkblue, lightskyblue); /* Standard syntax */
+    border-color: transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background: blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, royalblue, lightskyblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(0deg, royalblue, lightskyblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, royalblue, lightskyblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, royalblue, lightskyblue); /* Standard syntax */
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.alert-info{
+    background: #00BFFF;
+    border-color: transparent;
+    text-align: center;
+}
+.alert-success{
+    background: #ADFF2F;
+    border-color: transparent;
+    text-align: center;
+}
+.alert-danger{
+   background: #FF0000;
+    border-color: transparent;
+    text-align: center;
+}
+.alert-warning{
+    background: #FFFF00;
+    border-color: transparent;
+    text-align: center;
+}
+
+.alert-wrong{
+    background: #ff33bb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #00BFFF, #ADFF2F, #FF0000, #FFFF00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #00BFFF, #ADFF2F, #FF0000, #FFFF00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #00BFFF, #ADFF2F, #FF0000, #FFFF00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #00BFFF, #ADFF2F, #FF0000, #FFFF00); /* Standard syntax */
+    border-color: transparent;
+    text-align: center;
+}
+
+.btn-primary{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.Username{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+     /* The Modal (background) */
+ .modal {
+     display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     padding-top: 100px; /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+#my-btn {
+    color: #fff;
+    background-color: #00cccc;
+    border-color: #46b8da;
+}
+
+#results {
+    color: #000
+}
+

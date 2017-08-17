@@ -8,16 +8,48 @@
             <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="start-quiz.php">#1 Quiz</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC2dLAwPuGIyLxjJdnV2nMZA">YouTube</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Menschen</a></li>
+                            <li><a href="#">Kultur</a></li>
+                            <li><a href="#">Gaming</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
         <div class="container">
 
             <h1>Ein Quiz über Mich</h1>
-            <img src="Logo.png" />
+
             <div class="row quiz-options">
                 <div class="col-md-3">
 
                     <form action="" method="post">
                         <div>
-                        <input type="text" name="Username" id="Username"  required>
+                        <input type="text" name="Username" class="Username"  required>
                         </div>
                         <?php
                         $questions = array ( "Wann habe ich Geburtstag?" => array ("24.07.2001", "25.04.2002", "30.06.2003", "15.02.2001"),
@@ -104,20 +136,20 @@
 
                 $blacklistedNames = array("Luca", "Luci", "Rene");
                 if (in_array($name, $blacklistedNames)) {
-                    echo "<div id='results'>du darfst das Quiz nicht machen</div>";
+                    echo "<div class=\"alert alert-wrong\" role=\"alert\"  id='results'>du darfst das Quiz nicht machen</div>";
                 } else {
-                    echo "<div id='results'>$totalCorrect / 10 correct</div>";
+                    echo "<div class=\"alert alert-info\" role=\"alert\" id='results'>$totalCorrect / 10 correct</div>";
 
-                    if ($totalCorrect == "1") { echo "<div id='results'>$name , du loser, du hast nur $totalCorrect Punkt</div>"; }
-                    if ($totalCorrect == "2") { echo "<div id='results'>$name , du bist kein loser mehr, hast aber trotzdem nur $totalCorrect Punkte </div>"; }
-                    if ($totalCorrect == "3") { echo "<div id='results'>du besserst dich, $name , aber hast leider nur $totalCorrect Punkte</div>"; }
-                    if ($totalCorrect == "4") { echo "<div id='results'>das geht noch viel besser, $name , als $totalCorrect Punkte</div>"; }
-                    if ($totalCorrect == "5") { echo "<div id='results'>ich hoffe du schaffst $totalCorrect Punkte noch dazu, $name</div>"; }
-                    if ($totalCorrect == "6") { echo "<div id='results'>du bist auf dem richtigen weg mit deinen $totalCorrect Punkten, $name</div>"; }
-                    if ($totalCorrect == "7") { echo "<div id='results'>du hast $totalCorrect Punkte, $name , brauchst aber noch 3</div>"; }
-                    if ($totalCorrect == "8") { echo "<div id='results'>andere können das besser als du, $name , mit deinen $totalCorrect Punkten</div>"; }
-                    if ($totalCorrect == "9") { echo "<div id='results'>$totalCorrect Punkte sind schon sehr gut, $name</div>"; }
-                    if ($totalCorrect == "10") { echo "<div id='results'>jaaaa du hast es geschafft, $name , du hast $totalCorrect Punkte</div>"; }
+                    if ($totalCorrect == "1") { echo "<div class=\"alert alert-danger\" role=\"alert\" id='results'>$name , du loser, du hast nur $totalCorrect Punkt</div>"; }
+                    if ($totalCorrect == "2") { echo "<div class=\"alert alert-danger\" role=\"alert\" id='results'>$name , du bist kein loser mehr, hast aber trotzdem nur $totalCorrect Punkte </div>"; }
+                    if ($totalCorrect == "3") { echo "<div class=\"alert alert-danger\" role=\"alert\" id='results'>du besserst dich, $name , aber hast leider nur $totalCorrect Punkte</div>"; }
+                    if ($totalCorrect == "4") { echo "<div class=\"alert alert-warning\" role=\"alert\" id='results'>das geht noch viel besser, $name , als $totalCorrect Punkte</div>"; }
+                    if ($totalCorrect == "5") { echo "<div class=\"alert alert-warning\" role=\"alert\" id='results'>ich hoffe du schaffst $totalCorrect Punkte noch dazu, $name</div>"; }
+                    if ($totalCorrect == "6") { echo "<div class=\"alert alert-warning\" role=\"alert\" id='results'>du bist auf dem richtigen weg mit deinen $totalCorrect Punkten, $name</div>"; }
+                    if ($totalCorrect == "7") { echo "<div class=\"alert alert-warning\" role=\"alert\" id='results'>du hast $totalCorrect Punkte, $name , brauchst aber noch 3</div>"; }
+                    if ($totalCorrect == "8") { echo "<div class=\"alert alert-success\" role=\"alert\" id='results'>andere können das besser als du, $name , mit deinen $totalCorrect Punkten</div>"; }
+                    if ($totalCorrect == "9") { echo "<div class=\"alert alert-success\" role=\"alert\" id='results'>$totalCorrect Punkte sind schon sehr gut, $name</div>"; }
+                    if ($totalCorrect == "10") { echo "<div class=\"alert alert-success\" role=\"alert\" id='results'>jaaaa du hast es geschafft, $name , du hast $totalCorrect Punkte</div>"; }
 
                 }
 
@@ -131,6 +163,11 @@
 
 
         </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
     </body>
 </html>
