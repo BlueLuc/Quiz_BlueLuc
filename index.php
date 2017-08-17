@@ -5,6 +5,10 @@
             <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
             <link rel="icon" href="favicon.ico" type="image/x-icon">
             <link rel="stylesheet" href="css/vendor/bootstrap.css">
+
+            <link rel="stylesheet" type="text/css" href="css/vendor/slick.css"/>
+            <link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css"/>
+
             <link rel="stylesheet" href="css/styles.css">
         </head>
         <body>
@@ -41,28 +45,23 @@
             </div><!-- /.container-fluid -->
         </nav>
 
-        <!-- Trigger/Open The Modal -->
-        <button id="my-btn">Open Modal</button>
+        <div class="slider-1">
+            <div class="slider-content-1"><h2>your content</h2></div>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+            <div class="slider-content-2"><h2>asdf</h2></div>
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2>Modal Header</h2>
-                </div>
-                <div class="modal-body">
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div>
-            </div>
+            <div class="slider-content-3"><h2>lkjh</h2></div>
 
         </div>
+
+        
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vendor/slick.min.js"></script>
 
         <script>
             // Get the modal
@@ -90,14 +89,23 @@
                     modal.style.display = "none";
                 }
             }
+
+            $(document).ready(function(){
+                $('.slider-1').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+
         </script>
 
 
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+
+
+
 
 
         </body>

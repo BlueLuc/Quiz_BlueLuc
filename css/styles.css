@@ -185,9 +185,49 @@ input[type="submit"]{
     color: #fff;
     background-color: #00cccc;
     border-color: #46b8da;
+    margin-top: 200px;
 }
 
 #results {
     color: #000
 }
 
+.slick-prev {
+    left: 100px;
+}
+
+.slick-next{
+    right: 100px;
+}
+.slider-1 {
+    height: 200px;
+}
+.slider-content-1 {
+    background: #009933; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #00e64d, #006622); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #00e64d, #006622); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #00e64d, #006622); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #00e64d, #006622); /* Standard syntax */
+    height: 200px;
+    text-align: center;
+}
+
+.slider-content-2 {
+    background: #ff8c1a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #ffa366, #e65c00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #ffa366, #e65c00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #ffa366, #e65c00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #ffa366, #e65c00); /* Standard syntax */
+    height: 200px;
+    text-align: center;
+}
+
+.slider-content-3 {
+    background: #ff1ac6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #ff4dd2, #b30086); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #ff4dd2, #b30086); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #ff4dd2, #b30086); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #ff4dd2, #b30086); /* Standard syntax */
+    height: 200px;
+    text-align: center;
+}
