@@ -31,9 +31,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kategorien<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Menschen</a></li>
-                            <li><a href="#">Kultur</a></li>
-                            <li><a href="#">Gaming</a></li>
+                            <li><a href="Kategorie-Berühmte-Personen.php">Berühmte Personen</a></li>
+                            <li><a href="Kategorie-Serien-Filme.php">Serien & Filme</a></li>
+                            <li><a href="Kategorie-Gaming.php">Gaming</a></li>
 
 
                         </ul>

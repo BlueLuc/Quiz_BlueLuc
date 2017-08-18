@@ -316,9 +316,19 @@ a:hover {
  color: #000;
 }
 
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+.navbar-default {
+    border: 3px solid grey;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
     color: #555;
     background-color: transparent;
+}
+
+.navbar {
+    margin-bottom: 0px;
 }
 
 .btn-primary3 {
@@ -347,5 +357,66 @@ a:hover {
     background: -o-linear-gradient(-90deg, #e65c00, #ffa366); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-90deg, #e65c00, #ffa366); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-90deg, #e65c00, #ffa366); /* Standard syntax */
+}
+
+.panel-gaming {
+    border-color: darkorchid;
+}
+
+.body-1-teil-gaming {
+    background-color: #122b40;
+    height: 400px;
+    overflow: hidden;
+}
+
+.body-1-teil-serien-filme {
+    background-color: darkslategray;
+    height: 400px;
+    overflow: hidden;
+}
+
+.body-1-teil-berühmte-personen {
+    background-color: #800000;
+    height: 400px;
+    overflow: hidden;
+}
+
+@keyframes gaming-logo-animation {
+    0%   {transform: translateY(400px);}
+    100% {transform: translateY(0px);}
+}
+
+
+.gaming-logo {
+    text-align: center;
+    animation-name: gaming-logo-animation;
+    animation-duration: 4s;
+    opacity: 0.8;
+}
+
+@keyframes berühmte-personen-animation{
+    0%   {transform: translateY(400px);}
+    100% {transform: translateY(0px);}
+}
+
+
+.berühmte-personen-logo {
+    text-align: center;
+    animation-name: berühmte-personen-animation;
+    animation-duration: 4s;
+    opacity: 0.8;
+}
+
+@keyframes serien-flime-animation {
+    0%   {transform: translateY(400px);}
+    100% {transform: translateY(0px);}
+}
+
+
+.serien-flime-logo {
+    text-align: center;
+    animation-name: serien-flime-animation;
+    animation-duration: 4s;
+    opacity: 0.8;
 }
 
