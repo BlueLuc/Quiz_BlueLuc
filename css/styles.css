@@ -1,4 +1,4 @@
-body {
+.body-default {
     background: blue; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(-90deg, darkblue, lightskyblue); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(-90deg, darkblue, lightskyblue); /* For Opera 11.1 to 12.0 */
@@ -323,5 +323,29 @@ a:hover {
 
 .btn-primary3 {
     text-align: center;
+}
+
+.body-mama {
+    background: #ff1ac6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #b30086, #ff4dd2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #b30086, #ff4dd2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #b30086, #ff4dd2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #b30086, #ff4dd2); /* Standard syntax */
+}
+
+.body-onkel {
+    background: #009933; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #006622, #00e64d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #006622, #00e64d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #006622, #00e64d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #006622, #00e64d); /* Standard syntax */
+}
+
+.body-papa {
+    background: #ff8c1a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #e65c00, #ffa366); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #e65c00, #ffa366); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #e65c00, #ffa366); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #e65c00, #ffa366); /* Standard syntax */
 }
 

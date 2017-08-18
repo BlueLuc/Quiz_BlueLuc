@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/vendor/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css"/>
 </head>
-<body>
+<body class="body-papa">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
