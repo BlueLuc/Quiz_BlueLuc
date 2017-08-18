@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>Serien & Filme</title>
+            <title>Gewicht</title>
             <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
             <link rel="icon" href="favicon.ico" type="image/x-icon">
             <link rel="stylesheet" href="css/vendor/bootstrap.css">
@@ -9,8 +9,7 @@
             <link rel="stylesheet" type="text/css" href="css/vendor/slick.css"/>
             <link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css"/>
         </head>
-
-        <body>
+        <body class="body-default">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,18 +54,25 @@
                 </div><!-- /.container-fluid -->
             </nav>
 
-            <div class="body-1-teil-serien-filme">
-                <div class="serien-flime-logo"> <img src="Pikachu_Stencil.png" /> </div>
-            </div>
+            <p>
+                <label>Pounds</label>
+                <input id="inputPounds" type="number" placeholder="Pounds"
+                       oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+            </p>
+            <p>Grams: <span id="outputGrams"></span></p>
 
 
 
-
-
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <!-- Include all compiled plugins (below), or include individual files as needed -->
             <script src="js/vendor/bootstrap.min.js"></script>
             <script type="text/javascript" src="js/vendor/slick.min.js"></script>
+
+            <script>
+                /* When the input field receives input, convert the value from pounds to kilograms */
+                function weightConverter(valNum) {
+                    document.getElementById("outputGrams").innerHTML=valNum/0.0022046;
+                }
+            </script>
         </body>
     </html>

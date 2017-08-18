@@ -39,6 +39,17 @@
 
                                 </ul>
                             </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Umrechnen <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Umrechnen-Gewicht.php">Gewicht</a></li>
+                                    <li><a href="Umrechnen-Länge.php">Länge</a></li>
+                                    <li><a href="Umrechnen-Temperatur.php">Temperatur</a></li>
+                                    <li><a href="Umrechnen-Geschwindigkeit.php">Geschwindigkeit</a></li>
+
+
+                                </ul>
+                            </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->

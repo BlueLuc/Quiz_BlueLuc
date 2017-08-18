@@ -40,6 +40,17 @@
 
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Umrechnen <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Umrechnen-Gewicht.php">Gewicht</a></li>
+                                <li><a href="Umrechnen-Länge.php">Länge</a></li>
+                                <li><a href="Umrechnen-Temperatur.php">Temperatur</a></li>
+                                <li><a href="Umrechnen-Geschwindigkeit.php">Geschwindigkeit</a></li>
+
+
+                            </ul>
+                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -77,6 +88,7 @@
         </div>
 
 
+        <p id="demo"></p>
 
 
 
@@ -84,6 +96,40 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/vendor/slick.min.js"></script>
+
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Apr 25, 2018 10:48:25").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+
+
 
         <script>
 
