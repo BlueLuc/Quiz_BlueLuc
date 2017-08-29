@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quiz über Papa</title>
+    <title>Quiz über Andrea</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/vendor/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css"/>
 </head>
-<body class="body-papa">
+<body class="body-andrea">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,7 +57,7 @@
 
 <div class="container">
 
-    <h1>Ein Quiz über meine Papa</h1>
+    <h1>Ein Quiz über die Andrea</h1>
 
     <div class="row quiz-options">
         <div class="col-md-3">
@@ -67,25 +67,25 @@
                     <input type="text" name="Username" class="Username" placeholder="Username" required>
                 </div>
                 <?php
-                $questions = array ( "Wie heißt er mit 2. Namen" => array ("Karl", "Thomas", "Sascha", "Martin"),
+                $questions = array ( "Wann hat sie Geburtstag?" => array ("13.09.1964", "5.10.1963", "27.05.1965", "30.07.1966"),
 
-                    "Wie heißen seine Eltern?" => array ("Karl&Susi", "Thomas&Uschi", "Walter&Sabine", "Heinz&Monika"),
+                    "Wann hat sie geheiratet" => array ("24.09.2005", "16.03.2005", "30.05.2005", "5.11.2005"),
 
-                    "Wann hat er Geburtstag" => array ("30. Februar 1970", "10. Mai 1971", "25. März 1972", "6. Jänner 1973"),
+                    "Welchen Fußballverein mag sie am liebste" => array ("SK Rapid", "Sturm Graz", "FAK Austria", "Red Bull Salzburg"),
 
-                    "Wie hieß sein erstes Cafe Haus?" => array ("Sport Cafe", "Biker Cafe", "Cafe Latte", "Cafe Wien"),
+                    "Was ist ihre lieblings Musikrichtung?" => array ("Pop", "Klassik", "Electro", "Schlager"),
 
-                    "Wie viele Geschwister hat er?" => array ("2", "3", "1", "Keine"),
+                    "Wer ist ihr lieblings Sänger?" => array ("Xavier Neidoo", "Andreas Gablier", "Andreas Bourani", "Udo Lindenberg"),
 
-                    "Welchen Fußballverein mag er am liebste" => array ("Real Madrid", "SK Rapid", "FAK Austria", "Red Bull Salzburg"),
+                    "Wo ist sie aufgewachsen?" => array ("Jois", "Neusiedl", "Winden", "Wien"),
 
-                    "Welchen Fußballverein mag er nicht?" => array ("FC Barcelona", "SK Rapid", "FAK Austria", "Sturm Graz"),
+                    "Wer ist ihr lieblings Sportler?" => array ("Vladmimir Klitschko", "Steffen Hoffmann", "Ian Woosnam", "Michael Jordan"),
 
-                    "Wie heißt seine Frau" => array ("Andrea", "Uschi", "Anna", "Caro"),
+                    "Was ist ihre lieblings Hunderasse?" => array ("Dachs", "Mops", "Windhund", "Akita"),
 
-                    "Von welcher Marke ist sein Auto" => array ("Audi", "BMW", "Mercedes", "VW"),
+                    "Welche Naturhaarfarbe hat sie?" => array ("Blond", "Schwarz", "Braun", "Orange"),
 
-                    "Wo war sein letztes Restaurant?" => array ("Ottakringerbad", "Amalienbad", "Neubaugasse", "Märzstraße"),
+                    "Wer ist ihre beste Freundin?" => array ("Karin", "Sara", "Inge", "Marion"),
 
                 );
                 $questionCount = 1;
@@ -136,16 +136,16 @@
 
         $totalCorrect = 0;
 
-        if ($answer1 == "Karl") { $totalCorrect++; }
-        if ($answer2 == "Heinz&Monika") { $totalCorrect++; }
-        if ($answer3 == "10. Mai 1971") { $totalCorrect++; }
-        if ($answer4 == "Sport Cafe") { $totalCorrect++; }
-        if ($answer5 == "1") { $totalCorrect++; }
-        if ($answer6 == "SK Rapid") { $totalCorrect++; }
-        if ($answer7 == "FAK Austria") { $totalCorrect++; }
-        if ($answer8 == "Andrea") { $totalCorrect++; }
-        if ($answer9 == "VW") { $totalCorrect++; }
-        if ($answer10 == "Amalienbad") { $totalCorrect++; }
+        if ($answer1 == "5.10.1963") { $totalCorrect++; }
+        if ($answer2 == "24.09.2005") { $totalCorrect++; }
+        if ($answer3 == "FAK Austria") { $totalCorrect++; }
+        if ($answer4 == "Schlager") { $totalCorrect++; }
+        if ($answer5 == "Andreas Gablier") { $totalCorrect++; }
+        if ($answer6 == "Winden") { $totalCorrect++; }
+        if ($answer7 == "Vladmimir Klitschko") { $totalCorrect++; }
+        if ($answer8 == "Mops") { $totalCorrect++; }
+        if ($answer9 == "Braun") { $totalCorrect++; }
+        if ($answer10 == "Marion") { $totalCorrect++; }
 
         $name = $_POST['Username'];
 

@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="start-quiz.php">#1 Quiz</a></li>
-                        <li><a href="https://www.youtube.com/channel/UC2dLAwPuGIyLxjJdnV2nMZA">YouTube</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCTFVMmoOnuMqTm19seEwoHA">YouTube</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kategorien <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -65,7 +65,9 @@
 
             <div class="slider-content-3"><a href="Quiz-Mama.php" class="btn-primary3"><h1>Quiz über meine Mama</h1></a></div>
 
-        </div>
+            <div class="slider-content-4"><a href="Quiz-Andrea.php" class="btn-primary3"><h1>Quiz über die Andrea</h1></a></div>
+
+        </div>s
 
         <div class="panel panel-primary">
             <div class="panel-heading"><a href="" class="btn-primary2">Facebook</a></div>
@@ -73,7 +75,7 @@
         </div>
 
         <div class="panel panel-danger">
-            <div class="panel-heading"><a href="https://www.youtube.com/channel/UC2dLAwPuGIyLxjJdnV2nMZA" class="btn-primary2">YouTube</a></div>
+            <div class="panel-heading"><a href="https://www.youtube.com/channel/UCTFVMmoOnuMqTm19seEwoHA" class="btn-primary2">YouTube</a></div>
             <div class="panel-body">asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</div>
         </div>
 
