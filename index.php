@@ -65,9 +65,9 @@
 
             <div class="slider-content-3"><a href="Quiz-Mama.php" class="btn-primary3"><h1>Quiz über meine Mama</h1></a></div>
 
-            <div class="slider-content-4"><a href="Quiz-Andrea.php" class="btn-primary3"><h1>Quiz über die Andrea</h1></a></div>
+            <div class="andrea123"><a href="Quiz-Andrea.php" class="btn-primary3"><h1>Quiz über die Andrea</h1></a></div>
 
-        </div>s
+        </div>
 
         <div class="panel panel-primary">
             <div class="panel-heading"><a href="" class="btn-primary2">Facebook</a></div>
