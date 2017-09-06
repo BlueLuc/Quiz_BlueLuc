@@ -236,6 +236,16 @@ input[type="submit"]{
     text-align: center;
 }
 
+.andrea123 {
+    background: #9900cc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #bf00ff, #730099); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #bf00ff, #730099); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #bf00ff, #730099); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #bf00ff, #730099); /* Standard syntax */
+    height: 300px;
+    text-align: center;
+}
+
 .slider-btn {
     color: red;
     z-index: 10;
@@ -357,6 +367,14 @@ a:hover {
     background: -o-linear-gradient(-90deg, #e65c00, #ffa366); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-90deg, #e65c00, #ffa366); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-90deg, #e65c00, #ffa366); /* Standard syntax */
+}
+
+.body-andrea {
+    background: #9900cc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #730099, #bf00ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #730099, #bf00ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #730099, #bf00ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #730099, #bf00ff); /* Standard syntax */
 }
 
 .panel-gaming {
