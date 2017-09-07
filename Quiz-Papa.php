@@ -38,17 +38,7 @@
 
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Umrechnen <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="">Gewicht</a></li>
-                        <li><a href="">Länge</a></li>
-                        <li><a href="">Temperatur</a></li>
-                        <li><a href="">Geschwindigkeit</a></li>
 
-
-                    </ul>
-                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
